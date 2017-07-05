@@ -1,0 +1,10 @@
+<html>
+<head><title>Stats for all shortcodes</title></head>
+
+<body>
+  <ul>
+    {{ range $index, $element := .}}
+    <li>{{.Shortcode}} -> {{.Count}}
+    {{ end }}
+  </ul>
+</html>
